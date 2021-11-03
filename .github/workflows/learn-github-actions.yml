@@ -10,3 +10,10 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - shell: bash
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "papascott@gmail.com"
+          git add package.json
+          git commit -m "Installed bats"
+          git push origin main
