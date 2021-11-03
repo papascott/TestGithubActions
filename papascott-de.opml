@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<opml version="2.0">
+	<head>
+		<title>Papascott Blog to Gatsby</title>
+		<dateCreated>Sat, 16 Oct 2021 12:29:41 GMT</dateCreated>
+		<flPublic>true</flPublic>
+		<urlPublic>http://drummer.scripting.com/ScottHansonDE/papascott-de.opml</urlPublic>
+		<urlBlogWebsite>http://drummer.papascott.de/</urlBlogWebsite>
+		<description>Scott Hanson</description>
+		<urlHeaderImage>https://s3.amazonaws.com/scripting.com/images/2019/07/07/americanPride.png</urlHeaderImage>
+		<ownerTwitterScreenName>ScottHansonDE</ownerTwitterScreenName>
+		<ownerName>Scott Hanson</ownerName>
+		<ownerId>http://twitter.com/ScottHansonDE</ownerId>
+		<urlUpdateSocket>ws://drummer.scripting.com:1232/</urlUpdateSocket>
+		<dateModified>Tue, 02 Nov 2021 08:26:38 GMT</dateModified>
+		<expansionState>1,2,3,6</expansionState>
+		<lastCursor>4</lastCursor>
+		</head>
+	<body>
+		<outline text="November 2021" created="Tue, 02 Nov 2021 07:43:46 GMT" name="november2021" type="calendarMonth">
+			<outline text="November 2" created="Tue, 02 Nov 2021 07:43:47 GMT" type="calendarDay" name="02">
+				<outline text="Video Demo of Posting to Gatsby" created="Tue, 02 Nov 2021 07:43:48 GMT" type="outline">
+					<outline text="Dave Winer asked me to make a quick video of how it looks for a user to post to Gatsby from Drummer. I'm more than happy to oblige!" created="Tue, 02 Nov 2021 07:44:00 GMT"/>
+					<outline text="&lt;iframe width=&quot;701&quot; height=&quot;388&quot; src=&quot;https://www.youtube.com/embed/9Y4cn-GPamY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;" created="Tue, 02 Nov 2021 08:23:30 GMT"/>
+					</outline>
+				</outline>
+			</outline>
+		<outline text="October 2021" created="Wed, 13 Oct 2021 22:08:41 GMT" name="october2021" type="calendarMonth">
+			<outline text="October 31" created="Sun, 31 Oct 2021 08:49:46 GMT" type="calendarDay" name="31">
+				<outline text="Blogging in Gatsby with Drummer " created="Sun, 31 Oct 2021 08:50:02 GMT" type="outline" isComment="false">
+					<outline text="It works! At least for me, with a lot of limitations. But this post (and the two previous posts) on my &lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby&lt;/a&gt;-powered blog was written in &lt;a href=&quot;http://docserver.scripting.com/drummer/about.opml&quot;&gt;Drummer&lt;/a&gt;. The Dummer posts are integrated with the previous posts that were written in Markdown. The code for my blog with the new OPML plugin is on &lt;a href=&quot;https://github.com/papascott/papascott-gatsby&quot;&gt;GitHub&lt;/a&gt;." created="Sun, 31 Oct 2021 08:50:15 GMT"/>
+					<outline text="As I mentioned, I started with &lt;a href=&quot;https://github.com/andrewshell/gatsby-demo-opmlnotes&quot;&gt;demo code&lt;/a&gt; by Andrew Shell for Little Outliner outlines. That was written for Gatsby v2, I submitted a couple of fixes so it would work with Gatsby v3 and the recently released v4. " created="Sun, 31 Oct 2021 09:23:04 GMT"/>
+					<outline text="The demo code plugin creates Markdown 'nodes' for the outline entries. I added a couple of frontmatter entries to these nodes for ease of processing. I then adapted my `gatsby-node.js` to handle both Markdown files and the Markdown nodes from the OPML plugin." created="Sun, 31 Oct 2021 09:28:03 GMT"/>
+					<outline text="There are still a lot of limitations. It ignores blog posts without titles (my wish, for now) and does not support most of the &lt;a href=&quot;http://docserver.scripting.com/drummer/blogging.opml&quot;&gt;attributes&lt;/a&gt; used by the OldSchool CMS. But now it's my template, my layout, and my code, and I can add those features later whenever I want! 😛" created="Sun, 31 Oct 2021 09:32:06 GMT"/>
+					</outline>
+				<outline text="Will this get rendered out? It shouldn't" created="Sun, 31 Oct 2021 08:49:47 GMT" type="outline"/>
+				</outline>
+			<outline text="October 22" created="Mon, 25 Oct 2021 09:05:26 GMT">
+				<outline text="Making POST requests from Drummer" created="Fri, 22 Oct 2021 21:27:46 GMT" type="outline">
+					<outline text="That build hook URL for Netlify requires a POST request.  But Drummer lets you run a script from the Iconbar. Here's mine." created="Thu, 21 Oct 2021 14:28:19 GMT"/>
+					<outline text="```" created="Sun, 31 Oct 2021 09:17:04 GMT"/>
+					<outline text="const xhr = new XMLHttpRequest(); " created="Thu, 21 Oct 2021 09:50:56 GMT"/>
+					<outline text="const hookUrl=&quot;https://api.netlify.com/build_hooks/XXX&quot; // XXX is given to you by Netlify" created="Thu, 21 Oct 2021 09:52:02 GMT"/>
+					<outline text="xhr.open(&quot;POST&quot;, hookUrl, true);" created="Thu, 21 Oct 2021 09:56:29 GMT"/>
+					<outline text="xhr.setRequestHeader('Content-Type', 'application/json');"/>
+					<outline text="xhr.send(JSON.stringify({}));" created="Thu, 21 Oct 2021 09:51:06 GMT"/>
+					<outline text="```" created="Sun, 31 Oct 2021 09:17:15 GMT"/>
+					</outline>
+				</outline>
+			<outline text="October 21" created="Thu, 21 Oct 2021 10:05:21 GMT" type="calendarDay" name="21">
+				<outline text="Connecting Drummer to Gatsby" created="Thu, 21 Oct 2021 10:05:22 GMT" type="outline">
+					<outline text="I've been thinking about how to use Drummer outlines in a static site generator, like Gatsby or Eleventy. They generally generate content from markdown files, so it must be possible to either export OPML to markdown or for the site generator read content directly from OPML." created="Thu, 21 Oct 2021 10:05:33 GMT"/>
+					<outline text="I found some &lt;a href=&quot;https://github.com/andrewshell/gatsby-demo-opmlnotes&quot;&gt;demo code&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/andrewshell&quot;&gt;Andrew Shell &lt;/a&gt;for a Gatsby plugin to generate content from a Little Outliner outline. On a whim I forked it to &lt;a href=&quot;https://github.com/papascott/gatsby-demo-opmlnotes&quot;&gt;my own repository&lt;/a&gt; and plugged in the URL for a Drummer outline. And it &lt;a href=&quot;https://opmldemo.papascott.de/&quot;&gt;worked&lt;/a&gt;! It rendered the basic text of the outline entries, and I was able to deploy the site to Netlify.   " created="Thu, 21 Oct 2021 10:08:15 GMT"/>
+					<outline text="Going one step further, on Netlify I set up a build hook for the site, and in Drummer put a script on my Iconbar to send a POST request to the build hook URL. And voilà! I have a build button my for Gatsby test site. It is, of course, a lot slower than OldSchool. 😃 " created="Thu, 21 Oct 2021 10:21:46 GMT"/>
+					<outline text="There is of course a lot of work left before this will be usable, but for a beginning I'm pretty happy with it. Thank you Andrew for posting your demo code!" created="Thu, 21 Oct 2021 10:27:04 GMT"/>
+					</outline>
+				</outline>
+			</outline>
+		</body>
+	</opml>
