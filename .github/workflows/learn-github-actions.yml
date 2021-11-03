@@ -1,5 +1,5 @@
 name: fetch-opml
-on: [push, repository_dispatch]
+on: [workflow_dispatch]
 jobs:
   fetch-opml:
     runs-on: ubuntu-latest
