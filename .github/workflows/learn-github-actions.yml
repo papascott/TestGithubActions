@@ -11,5 +11,5 @@ jobs:
           git config --global user.email "papascott@gmail.com"
           curl http://drummer.scripting.com/ScottHansonDE/papascott-de.opml -o papascott-de.opml
           git add papascott-de.opml
-          git commit -m "Fetched papascott-de.opml"
+          git commit -m "Fetched papascott-de.opml" --allow-empty
           git push origin main
