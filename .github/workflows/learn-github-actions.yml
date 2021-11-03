@@ -1,20 +1,15 @@
 name: learn-github-actions
-on: [push]
+on: [push, repository_dispatch]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: npm install bats
-      - run: bats -v
       - shell: bash
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "papascott@gmail.com"
-          git add package*
-          git commit -m "Installed bats"
+          curl http://drummer.scripting.com/ScottHansonDE/papascott-de.opml -o papascott-de.opml
+          git add papascott-de.opml
+          git commit -m "Fetched papascott-de.opml"
           git push origin main
