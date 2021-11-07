@@ -12,13 +12,19 @@
 		<ownerName>Scott Hanson</ownerName>
 		<ownerId>http://twitter.com/ScottHansonDE</ownerId>
 		<urlUpdateSocket>ws://drummer.scripting.com:1232/</urlUpdateSocket>
-		<dateModified>Wed, 03 Nov 2021 09:34:22 GMT</dateModified>
-		<expansionState>1,3,4,7</expansionState>
+		<dateModified>Fri, 05 Nov 2021 13:40:50 GMT</dateModified>
+		<expansionState>1,4</expansionState>
 		<lastCursor>1</lastCursor>
 		</head>
 	<body>
 		<outline text="November 2021" created="Tue, 02 Nov 2021 07:43:46 GMT" name="november2021" type="calendarMonth">
-			<outline text="November 3" created="Wed, 03 Nov 2021 09:34:18 GMT" type="calendarDay" name="03"/>
+			<outline text="November 3" created="Wed, 03 Nov 2021 10:37:26 GMT" type="calendarDay" name="03">
+				<outline text="Hide your secrets in the root outline" created="Wed, 03 Nov 2021 10:37:27 GMT" type="outline">
+					<outline text="My video demo yesterday revealed the URL of my Netlify build hook for all to see. It's now been changed, but I need not have revealed. &lt;a href=&quot;http://docserver.scripting.com/drummer/about.opml&quot;&gt;Drummer&lt;/a&gt; has a &lt;a href=&quot;http://docserver.scripting.com/drummer/scripting.opml#1629216924000&quot;&gt;root outline &lt;/a&gt;where global variables can be defined. " created="Wed, 03 Nov 2021 10:37:51 GMT"/>
+					<outline text="So in the root outIine I can create an `env` object, and define an entry for `netlifyBuildHook` for the URL. (You have to &lt;a href=&quot;http://docserver.scripting.com/drummer/scripting.opml#1629218924000&quot;&gt;use proper JavaScript object syntax&lt;/a&gt;, with brackets, colons and quotes.) " created="Wed, 03 Nov 2021 10:41:50 GMT"/>
+					<outline text="The xhr.open line of my build script can then be &lt;br /&gt;`xhr.open(&quot;POST&quot;, root.env.netlifyBuildHook, true);`&lt;br /&gt; without revealing the actual URL. " created="Wed, 03 Nov 2021 10:47:24 GMT"/>
+					</outline>
+				</outline>
 			<outline text="November 2" created="Tue, 02 Nov 2021 07:43:47 GMT" type="calendarDay" name="02">
 				<outline text="Video Demo of Posting to Gatsby" created="Tue, 02 Nov 2021 07:43:48 GMT" type="outline">
 					<outline text="Dave Winer asked me to make a quick video of how it looks for a user to post to Gatsby from Drummer. I'm more than happy to oblige!" created="Tue, 02 Nov 2021 07:44:00 GMT"/>
