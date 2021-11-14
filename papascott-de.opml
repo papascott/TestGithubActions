@@ -12,12 +12,15 @@
 		<ownerName>Scott Hanson</ownerName>
 		<ownerId>http://twitter.com/ScottHansonDE</ownerId>
 		<urlUpdateSocket>ws://drummer.scripting.com:1232/</urlUpdateSocket>
-		<dateModified>Fri, 05 Nov 2021 13:40:50 GMT</dateModified>
-		<expansionState>1,4</expansionState>
-		<lastCursor>1</lastCursor>
+		<dateModified>Sun, 14 Nov 2021 09:53:16 GMT</dateModified>
+		<expansionState>1,2,6</expansionState>
+		<lastCursor>2</lastCursor>
 		</head>
 	<body>
 		<outline text="November 2021" created="Tue, 02 Nov 2021 07:43:46 GMT" name="november2021" type="calendarMonth">
+			<outline text="November 14" created="Sun, 14 Nov 2021 09:53:01 GMT" type="calendarDay" name="14">
+				<outline text="I should really write something before I post to GitHub" created="Sun, 14 Nov 2021 09:53:02 GMT" type="outline"/>
+				</outline>
 			<outline text="November 3" created="Wed, 03 Nov 2021 10:37:26 GMT" type="calendarDay" name="03">
 				<outline text="Hide your secrets in the root outline" created="Wed, 03 Nov 2021 10:37:27 GMT" type="outline">
 					<outline text="My video demo yesterday revealed the URL of my Netlify build hook for all to see. It's now been changed, but I need not have revealed. &lt;a href=&quot;http://docserver.scripting.com/drummer/about.opml&quot;&gt;Drummer&lt;/a&gt; has a &lt;a href=&quot;http://docserver.scripting.com/drummer/scripting.opml#1629216924000&quot;&gt;root outline &lt;/a&gt;where global variables can be defined. " created="Wed, 03 Nov 2021 10:37:51 GMT"/>
