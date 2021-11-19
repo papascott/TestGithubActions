@@ -8,8 +8,6 @@ title: Push an Outline with Github Actions
 
 ---
 
-
-
 I've never worked with <a href="https://github.com/features/actions">Github Actions</a> before, but when thinking about how to push an outline from Drummer to GitHub I thought I'd take a look.
 
 Actions are in <a href="https://yaml.org/">YAML</a> files saved in a special directory `.github/workflows`in your repository. They can run when something happens in the repository (like a push or a pull request) or can be triggered externally (with an <a href="https://docs.github.com/en/rest/reference/actions#create-a-workflow-dispatch-event">API call</a>). The action starts a virtual machine, runs commands, then shuts down.
