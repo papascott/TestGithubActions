@@ -10,7 +10,7 @@ Here is an example of setting up Caddy on an existing Digital Ocean server runni
 
 1. Open the Caddy configuration file in the nano editor with `sudo nano /etc/caddy/Caddyfile`
 
-1. Replace the entire contents with
+1. Replace the entire contents with <br />!(https://cln.sh/3QbBxL)
 
 1. Restart the Caddy service with `sudo service caddy restart`
 
