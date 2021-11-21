@@ -8,5 +8,40 @@ Here is an example of setting up Caddy on an existing Digital Ocean server runni
 
 1. Install the official Caddy package für Ubuntu <a href="https://caddyserver.com/docs/install#debian-ubuntu-raspbian">per their instructions</a>.  This automatically starts and runs Caddy as a systemd service.
 
-1. Open the Caddy configuration in the nano editor with `sudo nano /etc/caddy/Caddyfile`
+1. Open the Caddy configuration file in the nano editor with `sudo nano /etc/caddy/Caddyfile`
+
+1. Replace the entire contents with
+
+````
+
+
+{
+
+on_demand_tls {
+
+ask http://localhost:1339/isdomainvalid
+
+interval 2m
+
+burst    5
+
+}
+
+}
+
+https:// {
+
+tls {
+
+on_demand
+
+}
+
+reverse_proxy localhost:1339
+
+}
+
+````
+
+1. Restart the Caddy service with `sudo service caddy restart`
 
