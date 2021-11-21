@@ -4,7 +4,9 @@
 
 ## How to
 
-Here is an example of setting up Caddy on a Digital Ocean server running Ubuntu
+Here is an example of setting up Caddy on an existing Digital Ocean server running Ubuntu
 
+1. Install the official Caddy package für Ubuntu <a href="https://caddyserver.com/docs/install#debian-ubuntu-raspbian">per their instructions</a>.  This automatically starts and runs Caddy as a systemd service.
 
+1. Open the Caddy configuration in the nano editor with `sudo nano /etc/caddy/Caddyfile`
 
