@@ -4,7 +4,7 @@
 
 ## How to
 
-Here is an example of setting up Caddy on an existing Digital Ocean server running Ubuntu
+Here is an example of setting up Caddy on an existing PagePark installation Digital Ocean server running Ubuntu (assuming you have domains in your domains folder and have <a href="https://github.com/scripting/pagePark#mapping-port-80-to-1339">mapped port 80 to PagePark</a> as in the instructions).
 
 1. Install the official Caddy package für Ubuntu <a href="https://caddyserver.com/docs/install#debian-ubuntu-raspbian">per their instructions</a>.  This automatically starts and runs Caddy as a systemd service.
 
@@ -13,4 +13,6 @@ Here is an example of setting up Caddy on an existing Digital Ocean server runni
 1. Replace the entire contents with <br />![Caddyfile](https://res.cloudinary.com/papascott/image/upload/v1637511787/r1WIMZn66Cs4Z47CBYCfolGbJMcdXYGhZ0IWmr2V.jpg)
 
 1. Restart the Caddy service with `sudo service caddy restart`
+
+
 
