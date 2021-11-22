@@ -8,10 +8,10 @@ Here is an example of setting up Caddy on an existing PagePark installation on a
 1. Replace the entire contents with <br />![Caddyfile](https://res.cloudinary.com/papascott/image/upload/v1637511787/r1WIMZn66Cs4Z47CBYCfolGbJMcdXYGhZ0IWmr2V.jpg)
 ```
 {
-on_demand_tls {
-ask http://localhost:1339/isdomainvalid
-interval 2m
-burst    5
+  on_demand_tls {
+  ask http://localhost:1339/isdomainvalid
+  interval 2m
+  burst    5
 }
 }
 https:// {
