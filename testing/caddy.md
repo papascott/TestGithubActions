@@ -7,7 +7,7 @@ Here is an example of setting up Caddy on an existing PagePark installation on a
 1. Install the official Caddy package für Ubuntu <a href="https://caddyserver.com/docs/install#debian-ubuntu-raspbian">per their instructions</a>.  This automatically starts and runs Caddy as a systemd service.
 1. Open the Caddy configuration file in the nano editor with `sudo nano /etc/caddy/Caddyfile`
 1. Replace the entire contents with 
-   ```shell
+   ```
     {
       on_demand_tls {
         ask http://localhost:1339/isdomainvalid
