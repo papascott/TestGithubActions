@@ -8,7 +8,7 @@ Here is an example of setting up Caddy on an existing PagePark installation on a
 1. Open the Caddy configuration file in the nano editor with `sudo nano /etc/caddy/Caddyfile`
 1. Replace the entire contents with: 
    ```
-{
+    {
       on_demand_tls {
         ask http://localhost:1339/isdomainvalid
         interval 2m
