@@ -63,7 +63,7 @@ The number in front of the rule is the rule number. To delete these two rules, w
 `sudo iptables -t nat -D OUTPUT 1`
 
 (changing the 1 at the end if your rule number is different).
-### What is the 'ask', 'interval' and'burst' in the configuration?
+### What are the 'ask', 'interval' and 'burst' in the configuration?
 They are for security purposes. They limit certificate requests to only domains configured in PagePage, and limits the rate of those requests. Otherwise an attacker can bombard your server with certificate requests for domains you don't even serve. 
 ### What about default domains?
 Domains that are not explicitly in the domains directory will not be served automatic certificates. You can check the <a href="https://caddyserver.com/docs/">Caddy documentation</a> for adding domains explicitly to the Caddy configuration.
