@@ -27,7 +27,7 @@ Here is an example of setting up Caddy on an existing PagePark installation on a
 This configuration means that both HTTP (over iptables) and HTTPS (over Caddy) will work for your domains!
 ## Further cases
 ### Running Caddy without iptables mapping
-If you have not mapped port 80 to PagePark, this configuration will also listen to port 80 and redirect HTTP requests to HTTPS. 
+If you have not mapped port 80 to PagePark, the configuration above will also listen to port 80 and redirect HTTP requests to HTTPS. 
 If you'd rather not redirect port 80, you can add a section for HTTP and disable redirects like this:
    ```
    {
@@ -63,3 +63,5 @@ The number in front of the rule is the rule number. To delete these two rules, w
 `sudo iptables -t nat -D OUTPUT 1`
 
 (changing the 1 at the end if your rule number is different).
+### What is the 'ask', 'interval' and'burst' in the configuration?
+They are for security purposes. They limit certificate requests to only domains configured in PagePage, and limits the rate of those requests. Otherwise an attacker can bombard your server with certificate requests for domains you don't even serve. 
