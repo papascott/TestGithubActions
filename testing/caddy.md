@@ -58,7 +58,10 @@ The output will look something like this:
 ![](https://res.cloudinary.com/papascott/image/upload/v1637840426/TujSanB1nu0Bdelbge96Lr4UlGgFO7jV6D5Jc9VX.jpg)
 
 The number in front of the rule is the rule number. To delete these two rules, we need two commands  
-
+```
+sudo iptables -t nat -D OUTPUT 1
+sudo iptables -t nat -D OUTPUT 1
+```
 (changing the 1 at the end if your rule number is different).
 ### What are the 'ask', 'interval' and 'burst' in the configuration?
 They are for security purposes. They limit certificate requests to only domains configured in PagePage, and limits the rate of those requests. Otherwise an attacker can bombard your server with certificate requests for domains you don't even serve. 
