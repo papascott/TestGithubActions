@@ -25,3 +25,26 @@ Here is an example of setting up Caddy on an existing PagePark installation on a
 1. Restart the Caddy service with `sudo service caddy restart`
 1. Test https for one of your domains in the terminal with curl: e.g. `curl https://www.example.com`. This first time it will take several seconds for Caddy to request and obtain a certificate. It may even fail the first time, but then try again. The content of the index page of your domain should be printed to the terminal. That means it works!
 This configuration means that both HTTP (over iptables) and HTTPS (over Caddy) will work for your domains!
+## Running Caddy without iptables mapping
+If you have not mapped port 80 to PagePark, this configuration will also listen to port 80 and redirect HTTP requests to HTTPS. 
+If you'd rather not redirect port 80, you can extend the Caddy configuration file to this:
+   ```
+   {
+     on_demand_tls {
+       auto_https disable_redirects
+
+       ask http://localhost:1339/isdomainvalid
+       interval 2m
+       burst    5
+     }
+   }
+   https:// {
+     reverse_proxy localhost:1339
+   }
+   https:// {
+     tls {
+       on_demand
+     }
+     reverse_proxy localhost:1339
+   }
+   ```
