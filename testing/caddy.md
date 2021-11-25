@@ -52,3 +52,6 @@ To delete an iptables rule you have to know the line number. You can list the na
 
 `sudo iptables -t nat -v -L -n --line-number`
 
+The output will look something like this:
+![](https://res.cloudinary.com/papascott/image/upload/v1637840426/TujSanB1nu0Bdelbge96Lr4UlGgFO7jV6D5Jc9VX.jpg)
+
