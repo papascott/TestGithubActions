@@ -30,9 +30,9 @@ If you have not mapped port 80 to PagePark, this configuration will also listen 
 If you'd rather not redirect port 80, you can extend the Caddy configuration file to this:
    ```
    {
-     on_demand_tls {
-       auto_https disable_redirects
+     auto_https disable_redirects
 
+     on_demand_tls {
        ask http://localhost:1339/isdomainvalid
        interval 2m
        burst    5
