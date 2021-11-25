@@ -27,7 +27,7 @@ Here is an example of setting up Caddy on an existing PagePark installation on a
 This configuration means that both HTTP (over iptables) and HTTPS (over Caddy) will work for your domains!
 ## Running Caddy without iptables mapping
 If you have not mapped port 80 to PagePark, this configuration will also listen to port 80 and redirect HTTP requests to HTTPS. 
-If you'd rather not redirect port 80, you can extend the Caddy configuration file to this:
+If you'd rather not redirect port 80, you can add a section for HTTP and disable redirects like this:
    ```
    {
      auto_https disable_redirects
