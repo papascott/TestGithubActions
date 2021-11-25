@@ -48,7 +48,7 @@ If you'd rather not redirect port 80, you can add a section for HTTP and disable
      reverse_proxy localhost:1339
    }
    ```
-### Removing iptables mapping so Caddy can redirect HTTP
+### Removing iptables mapping so Caddy can handle HTTP
 To delete an iptables rule you have to know the rule number. You can list the nat rules with
 
 `sudo iptables -t nat -v -L -n --line-number`
