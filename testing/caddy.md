@@ -31,7 +31,6 @@ If you'd rather not redirect port 80, you can extend the Caddy configuration fil
    ```
    {
      auto_https disable_redirects
-
      on_demand_tls {
        ask http://localhost:1339/isdomainvalid
        interval 2m
