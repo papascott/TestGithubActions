@@ -59,6 +59,7 @@ The output will look something like this:
 
 The number in front of the rule is the rule number. To delete these two rules, we need two commands  
 ```
+sudo iptables -t nat -D PREROUTING 1
 sudo iptables -t nat -D OUTPUT 1
 ```
 (changing the 1 at the end if your rule number is different).
