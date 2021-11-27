@@ -15,33 +15,19 @@ Here is an example of setting up Caddy on an existing PagePark installation on a
 1. Replace the entire contents with: 
 
    ```
-
    {
-
      on_demand_tls {
-
        ask http://localhost:1339/isdomainvalid
-
        interval 2m
-
        burst    5
-
      }
-
    }
-
    https:// {
-
      tls {
-
        on_demand
-
      }
-
      reverse_proxy localhost:1339
-
    }
-
    ```
 
 1. Restart the Caddy service with `sudo service caddy restart`
