@@ -1,6 +1,6 @@
 # Use Caddy to map HTTPS to PagePark
 
-<i>2nd Draft 2021-11-25 SMH</i>
+<i>2021-11-25 <a href="https://github.com/papascott">Scott Hanson</a></i>
 
 <a href="https://caddyserver.com/">Caddy</a> is a very easy way to implement HTTPS for your PagePage domains. It is a web server that can do <a href="https://caddyserver.com/docs/automatic-https">automatic HTTPS</a>, automatically provisioning TLS certificates (from <a href="https://letsencrypt.org/">Let's Encrypt</a>) for a domain and keep them renewed. It can even obtain TLS certificates on demand for your PagePark domains, without out having to configure the domains in Caddy. 
 
