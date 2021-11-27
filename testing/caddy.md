@@ -47,41 +47,23 @@ If you have not mapped port 80 to PagePark, the configuration above will also li
 If you'd rather not redirect port 80, you can add a section for HTTP and disable redirects like this:
 
    ```
-
    {
-
      auto_https disable_redirects
-
      on_demand_tls {
-
        ask http://localhost:1339/isdomainvalid
-
        interval 2m
-
        burst    5
-
      }
-
    }
-
    http:// {
-
      reverse_proxy localhost:1339
-
    }
-
    https:// {
-
      tls {
-
        on_demand
-
      }
-
      reverse_proxy localhost:1339
-
    }
-
    ```
 
 ### Removing iptables mapping so Caddy can handle HTTP
