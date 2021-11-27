@@ -88,17 +88,11 @@ If you'd rather not redirect port 80, you can add a section for HTTP and disable
 
 To delete an iptables rule you have to know the rule number. You can list the nat rules with
 
-
-
 `sudo iptables -t nat -v -L -n --line-number`
-
-
 
 The output will look something like this:
 
 ![](https://res.cloudinary.com/papascott/image/upload/v1637840426/TujSanB1nu0Bdelbge96Lr4UlGgFO7jV6D5Jc9VX.jpg)
-
-
 
 The number in front of the rule is the rule number. To delete these two rules, we need two commands  
 
