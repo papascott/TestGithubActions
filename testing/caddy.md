@@ -1,4 +1,4 @@
-# Use Caddy to map HTTPS to PagePark (test)
+# Use Caddy to map HTTPS to PagePark
 
 <i>2021-11-25 <a href="https://github.com/papascott">Scott Hanson</a></i>
 
