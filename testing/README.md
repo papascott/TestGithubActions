@@ -1,6 +1,6 @@
 # DrummerNotes
 
-A collection of notes and code about the outliner Drummer http://drummer.scripting.com. It would be great if I could keep them current!
+A collection of notes and code about the outliner Drummer http://drummer.scripting.com. It would be great if I could keep them current! Now with a change
 
 ## My notes
 
