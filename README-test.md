@@ -1,4 +1,4 @@
-# Steps to build a deb package for Electric Drummer (either on Mac or a Linux server)
+# Steps to build a deb package for Electric Drummer <br /> (either on Mac or a Linux server)
 
 - On a Mac, the <a href="https://github.com/electron-userland/electron-installer-debian#requirements">deb packager</a> needs two command line tools: dpkg and fakeroot
 
