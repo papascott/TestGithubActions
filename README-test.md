@@ -2,9 +2,9 @@
 
 - On a Mac, the <a href="https://github.com/electron-userland/electron-installer-debian#requirements">deb packager</a> needs two command line tools: dpkg and fakeroot
 
-- The easiest way to install these is with <a href="https://brew.sh/">homebrew</a>
+- - The easiest way to install these is with <a href="https://brew.sh/">homebrew</a>
 
-- When homebrew is installed, then `brew install fakeroot dpkg` 
+- - When homebrew is installed, then `brew install fakeroot dpkg` 
 
 - git clone the electric drummer repository
 
