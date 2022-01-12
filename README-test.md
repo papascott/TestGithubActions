@@ -1,12 +1,14 @@
-# Install the package and run
+# electricDrummerDev
 
-Download the package from https://s3.amazonaws.com/publicfolder.papascott.de/electricdrummer_0.4.4_amd64.deb 
+@ScottHansonDE has build a test package of Electric Drummer than runs on Linux (tested on Ubutu 20.04.2)
 
-On the terminal `sudo apt install ./electricdrummer_0.4.4_amd64.deb`
+- Download the package from https://s3.amazonaws.com/publicfolder.papascott.de/electricdrummer_0.4.4_amd64.deb 
 
-In the terminal run `electricDrummer`
+- On the terminal `sudo apt install ./electricdrummer_0.4.4_amd64.deb`
 
-# Steps to build a deb package for Electric Drummer <br /> (either on a Mac or a Linux server)
+- In the terminal run `electricDrummer`
+
+## Steps to build a deb package for Electric Drummer <br /> (either on a Mac or a Linux server)
 
 - On a Mac, the <a href="https://github.com/electron-userland/electron-installer-debian#requirements">deb packager</a> needs two command line tools: dpkg and fakeroot
 
