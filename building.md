@@ -87,7 +87,7 @@ To run on Linux, copy over the zip, extract, with the terminal cd into the creat
 
 To run on Windows, copy over the zip, extract, with the file manager move into the created 'electronPublicFolder-0.4.6' folder, then double-click 'electronPublicFolder.exe' to run.
 
-### Future steps
+### Possible future steps
 
 - Build proper packages to install on Windows and Linux, configure by adding or changing the 'target' parameters under <a href="https://www.electron.build/configuration/win">win</a> and <a href="https://www.electron.build/configuration/linux">linux</a> 
 
