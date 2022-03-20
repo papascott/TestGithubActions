@@ -21,42 +21,23 @@ electron-builder can be <a href="https://www.electron.build/configuration/config
 My minimal electron-builder.json (for Public Folder)
 
 ```
-
 {
-
 "electronVersion": "7.1.10",
-
 "directories": {
-
 "buildResources": "."
-
 },
-
 "mac": {
-
 "target": "zip",
-
 "identity": null,
-
 "icon": "bowlingBall.icns"
-
 },
-
 "win": {
-
 "target": "zip",
-
 "icon": "bowlingBall.png"
-
 },
-
 "linux": {
-
 "target": "zip"
-
 }
-
 }
-
 ```
 
