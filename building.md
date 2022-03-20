@@ -18,26 +18,59 @@ Install the latest electron-builder globally with `npm install -g electron-build
 
 electron-builder can be <a href="https://www.electron.build/configuration/configuration">configured</a> within package.json (in a 'build' key) or a separate file. I chose to use an electron-builder.json file.
 
+The existing Public Folder app was built with `sudo electron-packager . "Public Folder" --platform=darwin --arch=all --overwrite --icon=bowlingBall.icns --electron-version=7.1.10`, so I incorporated these settings into my  electron-builder.json
+
 My minimal electron-builder.json (for Public Folder)
 
 ```
+
 {
+
 "electronVersion": "7.1.10",
+
 "directories": {
+
 "buildResources": "."
+
 },
+
 "mac": {
+
 "target": "zip",
+
 "identity": null,
+
 "icon": "bowlingBall.icns"
+
 },
+
 "win": {
+
 "target": "zip",
+
 "icon": "bowlingBall.png"
+
 },
+
 "linux": {
+
 "target": "zip"
+
 }
+
 }
+
 ```
+
+### Comments on the configuration
+
+`directories`: where electron-buiders expects to find the icons. They are in the root directory, so we specify '.' .
+
+`identity: null`: prevents the app from being signed with an existing Apple Developer ID, you may not need this.  
+
+If you only have an icon in .icns format, Windows will need an icon as .png or .ico.
+
+electron-packager requires 'name', 'version', 'author' and 'description' keys to be present in package.json.
+
+
 
