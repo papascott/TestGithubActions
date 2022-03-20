@@ -64,13 +64,13 @@ My minimal electron-builder.json (for Public Folder)
 
 ### Comments on the configuration
 
-`directories`: where electron-buiders expects to find the icons. They are in the root directory, so we specify '.' .
+- `directories`: where electron-buiders expects to find the icons. They are in the root directory, so we specify '.' .
 
-`identity: null`: prevents the app from being signed with an existing Apple Developer ID, you may not need this.  
+- `identity: null`: prevents the app from being signed with an existing Apple Developer ID, you may not need this.  
 
-If you only have an icon in .icns format, Windows will need an icon as .png or .ico.
+- If you only have an icon in .icns format, Windows will need an icon as .png or .ico.
 
-electron-packager requires 'name', 'version', 'author' and 'description' keys to be present in package.json.
+- electron-packager requires 'name', 'version', 'author' and 'description' keys to be present in package.json.
 
 
 
