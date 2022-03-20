@@ -74,12 +74,18 @@ My minimal electron-builder.json (for Public Folder)
 
 ### Build command
 
-`electron-builder -mwl ` (short for `electron-builder --mac --windows --linux`). The zip files are saved in a 'dist' directory. For Public Folder I got `electronPublicFolder-0.4.6-mac.zip`, `electronPublicFolder-0.4.6-win.zip` and `electronPublicFolder-0.4.6.zip` (for Linux).
+`electron-builder -mwl ` (short for `electron-builder --mac --windows --linux`). The zip files are saved in a 'dist' directory. For Public Folder I got: 
+
+- `electronPublicFolder-0.4.6-mac.zip`
+
+- `electronPublicFolder-0.4.6-win.zip`
+
+- `electronPublicFolder-0.4.6.zip` (for Linux)
 
 
+To run on Linux, copy over the zip, extract, with the terminal cd into the created 'electronPublicFolder-0.4.6' folder, then run with `./electronpublicfolder`
 
-
-
+To run on Windows, copy over the zip, extract, with the file manager move into the created 'electronPublicFolder-0.4.6' folder, then double-click 'electronPublicFolder.exe' to run.
 
 
 
