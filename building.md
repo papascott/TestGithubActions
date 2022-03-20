@@ -66,11 +66,20 @@ My minimal electron-builder.json (for Public Folder)
 
 - `directories`: where electron-buiders expects to find the icons. They are in the root directory, so we specify '.' .
 
-- `identity: null`: prevents the app from being signed with an existing Apple Developer ID, you may not need this.  
+- `identity: null`: prevents the app from being signed with an existing Apple Developer ID, you may not need this. I did. 
 
 - If you only have an icon in .icns format, Windows will need an icon as .png or .ico.
 
 - electron-packager requires 'name', 'version', 'author' and 'description' keys to be present in package.json.
+
+### Build command
+
+`electron-builder -mwl ` (short for `electron-builder --mac --windows --linux`). The zip files are saved in a 'dist' directory. For Public Folder I got `electronPublicFolder-0.4.6-mac.zip`, `electronPublicFolder-0.4.6-win.zip` and `electronPublicFolder-0.4.6.zip` (for Linux).
+
+
+
+
+
 
 
 
